@@ -32,22 +32,149 @@
 
 ### `decimal`
 
-
 ### `bool`
-
 
 ### `null`
 
-
 ### `DateTime`
-
 
 ### `DateOnly`
 
-
 ### `TimeOnly`
 
+### Type Conversions
 
+## Conditionals
 
+### `if` Statements
 
+### `switch` Statements
+
+## Loops and Sets
+
+### `do`/`while`
+
+### Arrays
+
+### Lists
+
+### Dictionary
+
+### `for`
+
+### `foreach`
+
+## Methods
+
+### Creating a Method
+
+### Calling a Method
+
+### Design Principles
+
+### Method Parameters
+
+### Returning Data
+
+### Tuples
+
+## Debugging
+
+### Breakpoints
+
+### Exceptions
+
+### Advanced Exceptions
+
+### Advanced Breakpoints
+
+## Classes
+
+### Static Classes
+
+### Instantiated Classes
+
+### Property Types
+
+### Namespaces
+
+### Class Libraries
+
+## Interfaces and Inheritance
+
+### Inheritance
+
+### Interfaces
+
+## Modifiers, Abstract, and Overrides
+
+### Access Modifiers
+
+### Abstract Classes
+
+### Method Overriding
+
+## Overloads and Extensions
+
+### Method Overloading
+
+### Extension Methods
+
+## Generics and Events
+
+### Generics
+
+### Events
+
+## Introduction to .NET Core
+
+## Class Libraries
+
+## Unit Tests
+
+## WinForms
+
+## WPF Core
+
+## ASP.NET Core Razor Pages
+
+## ASP.NET Core MVC
+
+## ASP.NET Core API
+
+## Blazor Server
+
+## Blazor WebAssembly
+
+## SQL Types
+
+### Basic Normalization
+
+### ORM
+
+### SQL Server
+
+### SQLite
+
+### MySQL
+
+## NoSQL Types
+
+### Concepts
+
+### MongoDB
+
+### CosmosDB
+
+## Other Data Access Types
+
+## Text Files
+
+## APIs
+
+## Other Access Methods
+
+## Linq/Lambdas
+
+## Entity Framework Core
 
