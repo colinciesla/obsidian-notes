@@ -97,24 +97,49 @@
 ### `double`
 - Can have a decimal point
 - When writing arithmetic operations, whole numbers are **explicitly integers**, so only using whole numbers will return an `int`. To return a `double`, include a decimal in any number in the operation
+- Rounds out to 15 or 16 digits after the decimal
+- Smaller memory footprint than `decimal`
+- Do not use to store money
 
 ### `decimal`
+- More precise than `double`: stores to 28 digits
+- Uses more memory than `double`
+- Only use for money or large units
+- Decimal values default to `double`; must be type-converted to `decimal` to store decimal values by using `M` (e.g. `2.34M`)
 
 ### `bool`
+- `true` or `false`
 
 ### `null`
+- Lack of a value
+- In order to make a variable *nullable* you must add a `?` after the type (e.g. `int?`)
+- A `string` is technically a `struct`, so setting it to `null` will work but will throw a warning if it is not marked as nullable
 
 ### `DateTime`
+- Most common way to store date and time
+- `DateTime.Now` returns the current **local** date and time in your country's format (i.e. MM/DD/YYYY HH:mm:ss tt)
+- Complicated because values can be different for every user and DST might be accounted for
+- `DateTime.toString()` has many different formatting options
+- `DateTime.Parse()`  parses based on your locale's formatting
+- `DateTime.ParseExact()` lets you specify the format
 
 ### `DateOnly`
+- There exists a `Date` type in C#, but it includes time as well. `DateOnly` explicitly only has date values
 
 ### `TimeOnly`
+- Explicitly only has time values
+- Can grab time values from `DateTime`s using `TimeOnly.FromDateTime()`
 
 ### Type Conversions
+- `Parse()` can throw unhandled exceptions if conversion does not succeed
+- Can use `TryParse(input, out output)` if conversion success is not guaranteed. Will return a `bool` and continue running the code regardless of the result
+- The `out` keyword assigns the value of the parsed input to the output. Output can be a new variable declaration (i.e. `int.TryParse(myInput, out int myOutput)`)
+- Can use traditional casting depending on types (e.g. `decimal myDecimal = (decimal) myDouble`)
 
 ## 2. Conditionals
 
 ### `if` Statements
+- 
 
 ### `switch` Statements
 
