@@ -41,7 +41,7 @@ Cons:
 ---
 # Supabase
 Open-source Firebase alternative
-![Image](https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/001/299/square_480/supabase-logo-icon_1.png)
+![Image|400](https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/001/299/square_480/supabase-logo-icon_1.png)
 ---
 ## Features
 - Everything works on top of a PostgreSQL database
@@ -53,7 +53,43 @@ Open-source Firebase alternative
 - Support for SAML
 ---
 ## Pricing
-
+- We would likely use the Pro tier, which is $25/month. Includes 100,000 MAUs along with generous storage and bandwidth limits.
+- Next tier, the Team tier, is $599/month and adds SOC2 compliance, SSO for the Supabase Dashboard, and priority support and SLAs.
+- SSO/SAML requires the Enterprise tier which is likely much more expensive.
 ---
-## Auth0
+Pros:
+- Open-source
+- PostgreSQL database means lots of customization and control using SQL
+- Nice management UI
+Cons: 
+- Steep learning curve if you aren't a SQL guru. Need to understand RLS and policies fairly well
+- Documentation is spotty
+- C# library is community-supported, not officially-supported by Supabase
+- If we need anything outside of the Pro tier the cost increases dramatically
+---
+# Auth0
+Premiere identity access management provider
+![Image|400](https://miro.medium.com/v2/resize:fit:2400/1*kofg5S-_kcyij3HL-uCnZA.png)
+---
+## Features
+- Pretty much every auth feature you can think of (MFA, password-less auth, SSO, universal login, all the social logins, etc.)
+- Management UI for most features
+- Drop-in libraries for auth process
+- JWT middleware for ASP.NET
+---
+## Pricing
+- We would likely use the B2C - Professional tier which is $240/month for 500 users. Includes admin roles, external databases, MFA, unlimited social connections.
+- Pricing scales up quite dramatically based on MAUs. Professional tier would cost $1600/month at 10,000 MAUs; after 10,000 you have to contact Auth0 for a custom plan.
+---
+Pros:
+- Probably the best feature set out of the major auth providers
+- Easy to use, and has a slick management UI
+
+Cons:
+- Vendor lock-in
+- Exorbitantly expensive as you scale up. If AdPredictive ever reached the Enterprise tier the costs would increase dramatically. Costs aren't public but reportedly start at $2500/month.
+---
+# ASP.NET Core Identity
+ASP.NET Core's native authentication provider
+![Image|300](https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/.NET_Core_Logo.svg/2048px-.NET_Core_Logo.svg.png)
 ---
