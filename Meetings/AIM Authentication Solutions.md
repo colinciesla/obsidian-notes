@@ -46,10 +46,14 @@ Open-source Firebase alternative
 ## Features
 - Everything works on top of a PostgreSQL database
 - Management UI
-- Auto-generated APIs for database
+- Auto-generated APIs for database connectivity
 - Auth rules are built with Postgres Row Level Security policies using SQL
+- MFA
 - Has all the social providers needed
 - Support for SAML
+---
+## Pricing
+
 ---
 ## Auth0
 ---
