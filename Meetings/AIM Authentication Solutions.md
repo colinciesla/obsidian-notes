@@ -1,8 +1,15 @@
+---
+width: 2000
+cssclasses:
+---
+
 # AIM Authentication Solutions
 ---
 # Firebase
 Google's backend-as-a-service platform
+
 ![Image|300](https://miro.medium.com/v2/resize:fit:300/1*R4c8lHBHuH5qyqOtZb3h-w.png)
+
 ---
 ## Features
 - Drop-in UI library for easy authentication with Firebase Auth's supported sign-in methods
@@ -41,7 +48,9 @@ Cons:
 ---
 # Supabase
 Open-source Firebase alternative
+
 ![Image|400](https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/001/299/square_480/supabase-logo-icon_1.png)
+
 ---
 ## Features
 - Everything works on top of a PostgreSQL database
@@ -69,7 +78,9 @@ Cons:
 ---
 # Auth0
 Premiere identity access management provider
+
 ![Image|400](https://miro.medium.com/v2/resize:fit:2400/1*kofg5S-_kcyij3HL-uCnZA.png)
+
 ---
 ## Features
 - Pretty much every auth feature you can think of (MFA, password-less auth, SSO, universal login, all the social logins, etc.)
@@ -91,7 +102,9 @@ Cons:
 ---
 # ASP.NET Core Identity
 ASP.NET Core's native authentication provider
+
 ![Image|300](https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/.NET_Core_Logo.svg/2048px-.NET_Core_Logo.svg.png)
+
 ---
 ## Features
 - "Includes APIs, UI, and backend database configuration to support managing user identities, storing user credentials, and granting or revoking permissions"
