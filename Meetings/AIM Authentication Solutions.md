@@ -93,3 +93,41 @@ Cons:
 ASP.NET Core's native authentication provider
 ![Image|300](https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/.NET_Core_Logo.svg/2048px-.NET_Core_Logo.svg.png)
 ---
+## Features
+- "Includes APIs, UI, and backend database configuration to support managing user identities, storing user credentials, and granting or revoking permissions"
+- Also includes 2FA, password management, authenticator apps
+---
+## Pricing
+- N/A, comes free with ASP.NET Core
+---
+Pros:
+- Free
+- Covers most, if not all, of our auth needs
+
+Cons:
+- Requires the most work from a development standpoint, non-trivial learning curve
+- No management UI
+- No SSO support; need a self-hosted or cloud-based OIDC server
+---
+## Factors to Consider
+- Feature set
+- Ease of use/developer experience
+- Initial and projected costs
+- Potential vendor lock-in or deprecation
+---
+- From a feature set perspective, the paid providers are all fairly similar with Auth0 having the best features and arguably the nicest management UI. ASP.NET Core Identity has the least amount of features but that may not be an issue depending on our needs.
+
+- From a developer experience perspective, Firebase and Auth0 both are known for being easy to implement, whereas Supabase requires deeper SQL knowledge to get the most out of it and ASP.NET Core Identity is entirely self-managed.
+
+- From a cost perspective, ASP.NET Core Identity is the clear winner since it is free. Firebase is likely not that expensive even at scale, whereas Supabase and Auth0 get quite a bit more expensive as MAUs increase.
+
+- Vendor lock-in is a potential issue with Firebase and Auth0, and there's a chance that Google abandons Firebase at some point in the near future given its track record with certain products and the lack of marketing for Firebase these days. This likely won't be an issue with Auth0 since it is so ubiquitous and widely-used in the industry.
+---
+## Verdict
+If AdPredictive does not scale to the point where it requires an expensive enterprise tier, then Auth0 is probably the best choice, as it has the best feature set, a great developer experience, and a reasonable Professional tier.
+
+If AdPredictive does scale significantly, Firebase may be the better option as it still has a good feature set, developer experience, and is significantly cheaper at scale.
+
+Due to the learning curves and effort required to implement, Supabase and ASP.NET Core Identity are probably not the best choices.
+
+
