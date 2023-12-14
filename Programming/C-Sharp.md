@@ -139,9 +139,10 @@
 ## 2. Conditionals
 
 ### `if` Statements
-- 
+- Standard C-style `if` and `else` statements
 
 ### `switch` Statements
+- Case statements use `and` or `or` keywords for conditional logic
 
 ## 3. Loops and Sets
 
